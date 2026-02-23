@@ -17,7 +17,7 @@ function Hero() {
         <div className="hero-wrapper">
           <div className="hero-image-container">
             <img 
-              src="./src/assets/profile.png" 
+              src="https://api.dicebear.com/7.x/avataaars/svg?seed=ReyAldrin&backgroundColor=b6e3f5" 
               alt="Rey Aldrin Sutare Profile" 
               className="hero-profile-pic"
             />
