@@ -437,6 +437,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .skill-tag {
@@ -456,6 +457,16 @@ body {
   border-color: #58a6ff;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(88, 166, 255, 0.2);
+}
+
+@media (max-width: 480px) {
+  .skills-list {
+    gap: 0.75rem;
+  }
+  .skill-tag {
+    padding: 0.55rem 1rem;
+    font-size: 0.875rem;
+  }
 }
 
 .projects-grid {

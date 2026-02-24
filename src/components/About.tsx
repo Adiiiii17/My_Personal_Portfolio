@@ -12,6 +12,7 @@ function About() {
     'Firebase',
     'MS Office',
     'GoogleColab',
+    'PowerBI',
     'API Integration',
     'CSS',
     'HTML',
