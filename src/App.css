@@ -484,6 +484,9 @@ body {
   transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
 }
 
 .project-card::before {
@@ -508,6 +511,43 @@ body {
 
 .project-card:hover::before {
   transform: scaleX(1);
+}
+
+.project-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(88, 166, 255, 0.08), rgba(121, 192, 255, 0.06));
+  margin-bottom: 1.25rem;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.04);
+}
+
+.project-modal-image-wrapper {
+  width: 100%;
+  max-height: 360px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, rgba(88, 166, 255, 0.08), rgba(121, 192, 255, 0.06));
+}
+
+.project-modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .project-title {
@@ -562,12 +602,22 @@ body {
   gap: 0.9rem;
 }
 
+.project-card .project-link {
+  margin-top: auto;
+}
+
 .project-card-hint {
   font-size: 0.8rem;
   color: #58a6ff;
   margin-bottom: 1rem;
   font-style: italic;
   opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+  .project-image-wrapper {
+    height: 160px;
+  }
 }
 
 .modal-overlay {
@@ -1112,6 +1162,10 @@ body {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .project-card {
+    min-height: 460px;
   }
 
   .certificates-grid {
