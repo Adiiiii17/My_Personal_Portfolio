@@ -15,10 +15,10 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Gcare:Connect Appointment and Feedback Platform',
+      title: 'Gcare: Connect Appointment and Feedback Platform',
       description:
         'A web application that connects patients and healthcare providers, enabling appointment scheduling, real-time communication, and feedback management.A Flutter web application for appointment scheduling and patient feedback, powered by Firebase and Hugging Face NLP sentiment analysis.',
-      techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      techStack: ['Flutter', 'Dart', 'Python', 'JavaScript','Firebase','Hugging Face', 'AppScript'],
       githubUrl: 'https://global-care-mc.web.app/',
     },
     {
@@ -26,7 +26,7 @@ function Projects() {
       title: 'Olo-Olo mangrove forest Booking Website',
       description:
         'A web application with real-time weather updates and visitor foot traffic tracking, featuring Firebase for database management and authentication, optimized for seamless performance across devices.',
-      techStack: ['JavaScript','Python', 'HTML', 'CSS', 'Firebase','OpenWeather API'],
+      techStack: ['JavaScript','Python', 'HTML', 'CSS', 'Firebase','OpenWeather API','emailJS'],
       githubUrl: 'https://olo-olo-mangrove-forest.web.app/',
     },
     {
@@ -34,7 +34,7 @@ function Projects() {
       title: 'Ilijan Falls Eco-Tourism Web Application',
       description:
         'A web application showcasing Ilijan Falls, featuring interactive visitor guides, eco-trail information, and community-driven conservation efforts, designed to promote smart and sustainable eco-tourism.',
-      techStack: ['JavaScript', 'Python','emailJS', 'HTML', 'CSS'],
+      techStack: ['JavaScript', 'Python','emailJS', 'HTML', 'CSS','Netlify'],
       githubUrl: 'https://ilijan-falls.netlify.app/',
     },
   ];

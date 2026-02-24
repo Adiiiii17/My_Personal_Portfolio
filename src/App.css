@@ -272,17 +272,31 @@ body {
   margin: 1rem 0 0 0;
   color: #c9d1d9;
   line-height: 1.2;
-  letter-spacing: 0.08em;
-  word-spacing: 0.1em;
+  letter-spacing: 0.01em;
+  word-spacing: 0.05em;
   word-break: break-word;
   white-space: normal;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
+  flex-wrap: nowrap;
   justify-content: center;
   min-height: auto;
   z-index: 100;
   position: relative;
-  gap: 2px;
+  gap: 0;
+}
+
+.hero-line {
+  display: inline-block;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.hero-line-first { margin-right: 0; }
+.hero-space { display: inline-block; width: 0.35em; }
+@media (max-width: 480px) {
+  .hero-space { display: none; }
+  .hero-title { flex-direction: column; align-items: center; }
 }
 
 .char-animate {
@@ -1064,6 +1078,7 @@ body {
 
   .hero-title {
     margin: 0.5rem 0 0 0;
+    word-spacing: 0.04em;
   }
 
   .hero-button {
@@ -1165,6 +1180,17 @@ body {
 
   .hero-title {
     letter-spacing: 0.05em;
+    word-spacing: 0.02em;
+  }
+  .hero-line {
+    display: block;
+  }
+  .hero-line-first {
+    margin-bottom: 0.1rem;
+    margin-right: 0;
+  }
+  .hero-line-last {
+    margin-top: 0.1rem;
   }
 
   .hero-button {

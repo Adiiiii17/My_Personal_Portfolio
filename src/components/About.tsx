@@ -8,12 +8,15 @@ function About() {
     'Node.js',
     'PostgreSQL',
     'Git',
+    'GitHub', 
     'Firebase',
     'MS Office',
     'GoogleColab',
     'API Integration',
     'CSS',
     'HTML',
+
+
   ];
 
   return (

@@ -59,13 +59,13 @@ function Navbar() {
         </div>
 
         {/* Mobile Hamburger Button */}
-        {isMobile && (
+        {isMobile && !isOpen && (
           <button 
             className="hamburger-button" 
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            onClick={() => setIsOpen(true)}
+            aria-label="Open menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            <Menu size={24} />
           </button>
         )}
 
